@@ -1,0 +1,142 @@
+Lucas Stoffel
+Week 6 Assignment
+
+import java.util.*;
+
+public class Arraylist {
+
+    public static void main(String args[]) {
+        // Creating arraylist of String objects
+        ArrayList<String> color_list = new ArrayList<String>();
+        // populate the arraylist with add method
+        color_list.add("Red");
+        color_list.add("Green");
+        color_list.add("Blue");
+        color_list.add("Cyan");
+        color_list.add("Magenta");
+        color_list.add("Yellow");
+        
+        System.out.println("The contents of the arraylist are:");
+        for (int i = 0; i < color_list.size(); i++) {
+            System.out.println(color_list.get(i));
+        }
+    }
+
+}
+
+
+public class Deques {
+
+    public static void main(String[] args) {
+        // Creating Deque and adding elements
+        Deque<Integer> deque = new ArrayDeque<Integer>();
+        deque.add(10);
+        deque.add(20);
+        deque.add(30);
+        System.out.println("Deque Elements:");
+        // Traversing elements
+        for (Integer num : deque) {
+            System.out.println(num);
+        }
+    }
+
+}
+
+
+public class Linkedlist {
+
+    public static void main(String args[])
+    {  
+        //linked list of String objects
+        LinkedList<String> linkedlist_num = new LinkedList<String>();  
+        linkedlist_num.add("one");
+        linkedlist_num.add("two");
+        linkedlist_num.add("three");
+        linkedlist_num.add("four");
+        linkedlist_num.add("five");
+        //iterate over the linked list to display contents
+         
+        System.out.println("The contents of the linked list are:");
+
+        for(int i = 0; i < linkedlist_num.size(); i++){
+
+            System.out.println(linkedlist_num.get(i));
+
+        }
+
+    }  
+}  
+
+
+public class Queues {
+
+    public static void main(String args[]) {
+        PriorityQueue<String> color_queue = new PriorityQueue<String>();
+        color_queue.add("red");
+        color_queue.add("green");
+        color_queue.add("blue");
+        color_queue.add("cyan");
+        color_queue.add("magenta");
+        color_queue.add("yellow");
+        System.out.println("Priority Queue elements:");
+        System.out.println("head:" + color_queue.peek());
+        System.out.println("Other elements in Priority Queue:");
+
+        for(String str : color_queue ){
+            System.out.println(str + " ");
+        }
+        
+        System.out.println("\n");
+        color_queue.remove();
+        System.out.println("After removing element, new head:" + color_queue.element());
+        System.out.println("\n");
+        color_queue.poll();
+        System.out.println("After removing another element, Priority Queue :");
+        
+        for(String str2 : color_queue ){
+            System.out.println(str2 + " ");
+        }
+    }
+
+}
+
+
+public class Stacks {
+    
+    public static void main(String args[])
+    {  
+        Stack<Integer> even_stack = new Stack<Integer>();  
+       even_stack.push(2);  
+       even_stack.push(4);  
+       even_stack.push(6);  
+       even_stack.push(8);  
+       even_stack.push(10);  
+       System.out.println("The element removed from stack: " + even_stack.pop());    
+        
+        System.out.println("The contents of the stack are:");
+        
+        for(int i = 0; i < even_stack.size(); i++)
+        {  
+              System.out.print(even_stack.get(i) + " ");  
+        }  
+    }  
+
+}
+
+
+public class Vectors {
+
+    public static void main(String args[]) {
+        Vector<String> subject_vector = new Vector<String>();
+        subject_vector.add("English");
+        subject_vector.add("Spanish");
+        subject_vector.add("Math");
+        subject_vector.add("Chemistry");
+
+        System.out.println("Vector contents:");
+        for (int i = 0; i < subject_vector.size(); i++) {
+            System.out.println(subject_vector.get(i));
+        }
+    }
+
+}
