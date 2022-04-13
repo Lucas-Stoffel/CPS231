@@ -1,6 +1,6 @@
 package Week12;
 
-public class Books {    
+public class Books {
 
     public static void main(String[] args) {
 
@@ -27,8 +27,35 @@ public class Books {
         for (int i = 0; i < a.length; i++)
             System.out.println("Initials: " + a[i].getInitials());
 
+        // Example 6
+        Book b3, b4;
+        b3 = new Book("Thinking in Java", "Bruce Eckel", 1129);
+        b4 = new Book("Thinking in Java", "Bruce Eckel", 1129);
+        if (b3 == b4)
+            System.out.println("The two books are the same");
+        else
+            System.out.println("The two books are different");
+
+        // Example 7
+        if (b1.equals(b2))
+            System.out.println("The two books are the same");
+        else
+            System.out.println("The two books are different");
+
+        // Example 8
+        Book b5, b6;
+        b5 = new Book("Thinking in Java", "Bruce Eckel", 1129);
+        b6 = new Book("Java in a nutshell", "David Flanagan", 353);
+        b5.setOwner("Carlos Kavka");
+        System.out.println("Owner of book b1: " + b5.getOwner());
+        System.out.println("Owner of book b2: " + b6.getOwner());
+
+        // Example 9
+        System.out.println(b5.description());
+        System.out.println(Book.description());
+
     }
-    
+
 }
 
 class Book {
@@ -62,6 +89,13 @@ class Book {
         return initials;
     }
 
+    public boolean equals(Book b) {
+        return (title.equals(b.title) &&
+                author.equals(b.author) &&
+                numberOfPages == b.numberOfPages &&
+                ISBN.equals(b.ISBN));
+    }
+
     public void setOwner(String name) {
         owner = name;
     }
@@ -69,5 +103,9 @@ class Book {
     public String getOwner() {
         return owner;
     }
+
+    public static String description() {
+        return "Book instances can store information on books";
+        }
 
 }
