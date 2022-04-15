@@ -12,3 +12,12 @@ Owner of book b1: Carlos Kavka
 Owner of book b2: Carlos Kavka
 
     Pair.java
+There are 10 cats available.
+---------------------
+There are 5 dogs available.
+There are 10 cats available.
+There are 12 birds available.
+---------------------
+There are 5 units of something available.
+There are 3 units of sandwich available.
+There are 7 units of pencil available.
