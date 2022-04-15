@@ -43,7 +43,7 @@ public class Pair<T1, T2> {
                 + howManyCats.getFirst() + " available.");
 
         // Just a sysout separator
-        System.out.println("n---------n");
+        System.out.println("---------------------");
 
         // Create a new list of Pairs of String/Integer objects
         List<Pair<String, Integer>> inventory = new LinkedList<Pair<String, Integer>>();
@@ -59,7 +59,7 @@ public class Pair<T1, T2> {
         }
 
         // Just a sysout separator
-        System.out.println("n---------n");
+        System.out.println("---------------------");
 
         // Now let's use the convenience class we created below…
         List<InventoryItem> coolInventory = new LinkedList<InventoryItem>();
