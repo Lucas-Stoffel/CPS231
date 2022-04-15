@@ -50,9 +50,7 @@ public class Books {
         System.out.println("Owner of book b1: " + b5.getOwner());
         System.out.println("Owner of book b2: " + b6.getOwner());
 
-        // Example 9
-        System.out.println(b5.description());
-        System.out.println(Book.description());
+        
 
     }
 
