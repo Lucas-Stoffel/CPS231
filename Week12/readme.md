@@ -2,4 +2,6 @@
 #
 # Monday Class - Books and Pair
 #
-# Wednesday Class - 
+# Wednesday Class - Books cont.
+#
+# Text file for programs' output
