@@ -43,7 +43,7 @@ public class Employee extends Person{
     public void deposit(double amount) {
         if (amount >= 0.0) {
             balance += amount;
-            System.out.println("*Depositing $" + amount + " to Balance*");
+            System.out.println("*Depositing $" + amount + " to Balance*\n");
         } else {
             System.err.println("Deposit amount must be positive.");
         }
@@ -53,7 +53,7 @@ public class Employee extends Person{
 
         if (amount >= 0.0 && amount <= balance) {
             balance -= amount;
-            System.out.println("*Withdrawing $" + amount + " from Balance*");
+            System.out.println("*Withdrawing $" + amount + " from Balance*\n");
         } else {
             System.err.println("Withdrawal amount must be positive and cannot be greater than balance");
         }
