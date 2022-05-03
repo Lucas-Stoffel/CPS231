@@ -1,4 +1,4 @@
-package Week10;
+package FinalProject;
 
 public class Person {
 
